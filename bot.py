@@ -7,7 +7,7 @@ bot = telebot.TeleBot(config.bot_token)
 
 @bot.message_handler(commands=['start', 'help'])
 def send_welcome(m):
-	bot.reply_to(m, "Привет, я просто бот и врятли смогу научить тебя чему-то, поэтому не трать моё время.")
+	bot.reply_to(m, "Привет, я просто бот и вряд ли смогу научить тебя чему-то, поэтому не трать моё время.")
 
 @bot.message_handler(func = lambda m: True)
 def get_ip(m):
